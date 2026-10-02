@@ -45,7 +45,9 @@ function App() {
   const getFasterModel = () => {
     if (!result) return "";
 
-    return result.geminiTime < result.groqTime ? "Gemini" : "Groq";
+    return result.geminiTime < result.groqTime
+      ? "Gemini"
+      : "Groq";
   };
 
   return (
@@ -83,9 +85,9 @@ function App() {
 
       {!loading && result && (
         <div className="results">
-
           <div className="question-box">
             <strong>Question:</strong>
+
             <p>{result.question}</p>
           </div>
 
@@ -95,7 +97,6 @@ function App() {
           </div>
 
           <div className="model-container">
-
             {/* Gemini */}
             <div className="model-card">
               <div className="model-header">
@@ -125,10 +126,13 @@ function App() {
                 {result.groqResponse}
               </div>
             </div>
-
           </div>
         </div>
       )}
+
+      <footer className="footer">
+        Developed by <strong>P Ganesh</strong>
+      </footer>
     </div>
   );
 }

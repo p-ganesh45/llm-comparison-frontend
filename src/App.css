@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -256,6 +255,21 @@ button:disabled {
   overflow-wrap: break-word;
 }
 
+/* Footer */
+
+.footer {
+  text-align: center;
+  margin-top: 45px;
+  padding: 20px 0 5px;
+  font-size: 15px;
+  color: #64748b;
+}
+
+.footer strong {
+  color: #4f46e5;
+  font-weight: 700;
+}
+
 /* Mobile */
 
 @media (max-width: 768px) {
@@ -294,5 +308,8 @@ button:disabled {
   .time {
     font-size: 12px;
   }
-}
 
+  .footer {
+    margin-top: 35px;
+  }
+}
