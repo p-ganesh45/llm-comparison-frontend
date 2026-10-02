@@ -16,18 +16,17 @@ function App() {
     setResult(null);
 
     try {
-      const response = await fetch(
-        "https://llm-comparison-backend.onrender.com/api/compare",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            message: question,
-          }),
-        }
-      );
+      const API_URL = import.meta.env.VITE_API_URL;
+
+      const response = await fetch(`${API_URL}/api/compare`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: question,
+        }),
+      });
 
       if (!response.ok) {
         throw new Error("Backend request failed");
@@ -36,8 +35,8 @@ function App() {
       const data = await response.json();
       setResult(data);
     } catch (error) {
-      console.error(error);
-      alert("Something went wrong. Check the backend.");
+      console.error("Error:", error);
+      alert("Something went wrong. Please check the backend.");
     } finally {
       setLoading(false);
     }
@@ -46,9 +45,7 @@ function App() {
   const getFasterModel = () => {
     if (!result) return "";
 
-    return result.geminiTime < result.groqTime
-      ? "Gemini"
-      : "Groq";
+    return result.geminiTime < result.groqTime ? "Gemini" : "Groq";
   };
 
   return (
@@ -99,6 +96,7 @@ function App() {
 
           <div className="model-container">
 
+            {/* Gemini */}
             <div className="model-card">
               <div className="model-header">
                 <h2>🟢 Gemini</h2>
@@ -113,6 +111,7 @@ function App() {
               </div>
             </div>
 
+            {/* Groq */}
             <div className="model-card">
               <div className="model-header">
                 <h2>🔵 Groq</h2>
