@@ -271,7 +271,7 @@ It demonstrates practical experience with:
 
 **P Ganesh**
 
-Java Backend & AI Application Engineer | Spring Boot Microservices • Spring AI • RAG | PostgreSQL • REST APIs | Oracle Java Foundations | React
+Java Backend & AI Application Engineer | Spring Boot • Microservices • Spring AI • RAG | PostgreSQL • REST APIs | Oracle Java Foundations | React
 
 ---
 
