@@ -252,6 +252,20 @@ It demonstrates practical experience with:
 * Add dark mode
 * Add authentication
 * Store previous comparisons in a database
+## 📸 Screenshots
+
+### 🏠 Home Page
+<img width="1916" height="963" alt="image" src="https://github.com/user-attachments/assets/a6504869-b2d8-45e8-b12f-e2fd99bdfebc" />
+
+### 🤖 AI Model Comparison
+
+<img width="958" height="916" alt="image" src="https://github.com/user-attachments/assets/ce540541-003c-4a08-9d4c-8942d6a78ce0" />
+
+
+### 📱 Responsive Design
+<img width="738" height="1601" alt="image" src="https://github.com/user-attachments/assets/ad8034c7-8923-4771-94b5-21026f742c2d" />
+<img width="738" height="1601" alt="image" src="https://github.com/user-attachments/assets/c7f6041f-1d47-40d6-99b2-a945ae917d0f" />
+
 
 ## 👨‍💻 Developer
 
